@@ -2,6 +2,8 @@ import { IconContext } from "react-icons";
 import { FaInstagram, FaYoutube, FaTiktok, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
+import './Footer.css';
+
 const Footer = () => {
   return (
     <>
