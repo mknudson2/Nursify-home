@@ -1,5 +1,6 @@
 import { IconContext } from "react-icons";
 import { BsList } from "react-icons/bs";
+import "./Navbar.css";
 
 const Navbar: React.FC = () => {
   return (
