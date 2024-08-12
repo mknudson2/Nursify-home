@@ -6,7 +6,7 @@ import { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import './ModuleSlides.css';
+import '../styles/ModuleSlides.css';
 
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 

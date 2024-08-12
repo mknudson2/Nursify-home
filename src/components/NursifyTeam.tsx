@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import './NursifyTeam.css'
+
+import '../styles/NursifyTeam.css'
 
 function NursifyTeam() {
     const [activeMember, setActiveMember] = useState<'Philip' | 'Jason'>('Philip');

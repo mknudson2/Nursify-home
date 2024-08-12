@@ -3,7 +3,8 @@ import Rating from '@mui/material/Rating';
 import { styled } from '@mui/material/styles';
 import { testimonials } from '../data/testimonialsData';
 import { useSwipeable } from 'react-swipeable';
-import './ScrollingReviews.css';
+
+import '../styles/ScrollingReviews.css';
 
 const ScrollingReviews: React.FC = () => {
   const [activeTestimonialId, setActiveTestimonialId] = useState<number>(-1);

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import './NursifyCertification.css';
+import '../styles/NursifyCertification.css';
 
 const NursifyCertification: React.FC = () => {
   useEffect(() => {

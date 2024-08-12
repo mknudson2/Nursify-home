@@ -1,6 +1,7 @@
 import Fab from '@mui/material/Fab';
 import { styled } from '@mui/system';
-import './Hero.css';
+
+import '../styles/Hero.css';
 
 const FabButton = styled(Fab)({
     position: 'fixed',

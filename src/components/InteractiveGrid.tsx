@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import './InteractiveGrid.css';
+
+import '../styles/InteractiveGrid.css';
 
 interface Item {
     id: number;

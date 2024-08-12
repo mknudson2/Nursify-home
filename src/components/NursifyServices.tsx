@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import './NursifyServices.css';
+
+import '../styles/NursifyServices.css';
 
 
 const NursifyServices: React.FC = () => {
