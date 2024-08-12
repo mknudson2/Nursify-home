@@ -1,0 +1,120 @@
+/* .exp-toggle-switch {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 60%;
+  margin: 5rem auto 3.6rem;
+}
+
+.exp-toggle-switch .exp-toggle-option {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  flex: 1;
+  text-align: center;
+  border-radius: 50px;
+  z-index: 1;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.exp-toggle-switch .exp-toggle-option.active {
+  background-color: var(--accent-color);
+  color: var(--main-text);
+}
+
+.exp-toggle-switch .exp-toggle-option:not(.active) {
+  color: var(--body-bkg);
+}
+
+.exp-toggle-switch .exp-toggle-background {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  width: 33%;
+  background-color: var(--accent-color);
+  border-radius: 50px;
+  transition: transform 0.4s ease;
+  z-index: 0;
+} */
+
+
+.exp-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem auto 3.6rem;
+    width: 72.5%;
+  }
+  
+  .exp-btn {
+    border: 2px solid var(--accent-color);
+    border-radius: 50px;
+    width: 15.625rem;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    background-color: var(--body-bkg);
+    color: var(--main-text);
+    cursor: pointer;
+    transition: .25s ease-in-out;
+  }
+  
+  .exp-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--main-text);
+    cursor: pointer;
+    transition: .15s ease-in-out;
+  }
+  
+  .exp-btn:active {
+    transform: scale(0.99);
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .exp-btn.active {
+    background-color: var(--accent-color);
+    color: var(--main-text);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    transition: .25s ease-in-out;
+  }
+  
+  @media (min-width: 768px){
+    .exp-buttons-container {
+      justify-content: space-evenly;
+      width: 95%;
+      gap: 2rem
+    }
+    
+    .exp-btn {
+      font-size: .98rem;
+      padding: 5px 10px;
+      justify-content: space-evenly;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .exp-buttons-container {
+      width: 90%;
+    }
+    
+    .exp-btn {
+      font-size: 1.25rem;
+      padding: 10px 10px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .exp-buttons-container {
+      width: 75%;
+    }
+    
+    .exp-btn {
+      font-size: 1.25rem;
+      padding: 10px 10px;
+    }
+  }
+  
+  

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './ExperienceButtons.css';
 
 interface ExperienceButtonsProps {
     onChange: (category: string) => void;
