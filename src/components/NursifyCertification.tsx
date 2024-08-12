@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+import './NursifyCertification.css';
+
 const NursifyCertification: React.FC = () => {
   useEffect(() => {
     const certificationContainer = document.querySelector('.certification-container');
