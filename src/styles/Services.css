@@ -1,0 +1,127 @@
+.services-container {
+    width: 72.5%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    text-align: center;
+  }
+  
+  .services-header {
+    grid-column: 1 / span 2;
+    font-size: 4.5rem;
+    margin-top: 5rem;
+    margin-bottom: -2rem;
+  }
+  
+  .highlight {
+    color: var(--accent-color);
+  }
+  
+  .service-row {
+    display: contents;
+    border-bottom: 2px solid var(--accent-color);
+  }
+  
+  .service-row:last-child {
+    border-bottom: none;
+  }
+  
+  .service-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7.5%;
+    text-align: left;
+  }
+  
+  .service-text h4 {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .service-text p {
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+  
+  .service-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5%;
+  }
+  
+  .service-image {
+    transform: scale(0.8);
+    opacity: 0;
+    width: 100%;
+    border-radius: 12px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .service-image.in-view {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .services-container {
+      width: 95%;
+      gap: 0.3rem;
+    }
+    
+    .services-header {
+      grid-column: 1 / span 2;
+      font-size: 3rem;
+      margin-top: 5rem;
+      margin-bottom: .5rem;
+    }
+  
+    .service-text {
+      padding: 3.5%;
+      text-align: left;
+    }
+    
+    .service-text h4 {
+      font-size: 1.4rem;
+    }
+    
+    .service-text p {
+      text-align: justify;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .services-container {
+      width: 72.5%;
+  
+    }
+    
+    .services-header {
+      grid-column: 1 / span 2;
+      font-size: 3.7rem;
+      margin-top: 5rem;
+      margin-bottom: .5rem;
+    }
+  
+    .service-text {
+      padding: 3.5%;
+      text-align: left;
+    }
+    
+    .service-text h4 {
+      font-size: 1.7rem;
+    }
+    
+    .service-text p {
+      text-align: justify;
+      font-size: 1.15rem;
+    }
+  }
