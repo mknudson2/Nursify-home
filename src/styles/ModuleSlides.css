@@ -1,0 +1,125 @@
+.gameContainer h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 4.6875rem;
+  }
+  
+  .section-header-highlight {
+    color: var(--accent-color);
+  }
+  
+  .swiper_container {
+   width: 80%;
+   margin: 0 auto;
+   }
+  
+   .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  
+  .moduleImg {
+    height: 255px;
+    width: 425px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px black;
+  }
+  /* 
+  .moduleImgSm {
+    height: 500px;
+    width: 500px;
+    object-fit:cover;
+    margin-bottom: 3rem;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px black;
+  } */
+  
+  .moduleImg:active .moduleImgSm:active {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .moduleText {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  #sliderPosition {
+    transform: translateY(1rem);
+  }
+  
+  .gameParagraph {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem auto 4rem;
+    width: 50%;
+  }
+  
+  .gameParagraph h3 {
+    color: var(--accent-color);
+    font-size: 2rem;
+  }
+  
+  .gameParagraph a {
+    text-decoration: none;
+    color: var(--cl-mixed)
+  }
+  
+  @media (min-width: 768px){
+    .gameContainer h2 {
+      font-size: 3rem;
+    }
+    
+    .gameParagraph {
+      width: 90%;
+    }
+  
+    .gameParagraph h3 {
+      font-size: 1.5rem;
+    }
+  
+    .gameParagraph p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px){
+    .gameContainer h2 {
+      font-size: 3.7rem;
+    }
+    
+    .gameParagraph {
+      width: 90%;
+    }
+  
+    .gameParagraph h3 {
+      font-size: 2rem;
+    }
+  
+    .gameParagraph p {
+      font-size: 1.15rem;
+    }
+  }
+  
+  @media (min-width: 1440px){
+    .gameContainer h2 {
+      font-size: 4rem;
+    }
+    
+    .gameParagraph {
+      width: 50%;
+    }
+  
+    .gameParagraph h3 {
+      font-size: 2.25rem;
+    }
+  
+    .gameParagraph p {
+      font-size: 1.25rem;
+    }
+  }
+  
