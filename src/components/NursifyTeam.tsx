@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './NursifyTeam.css'
 
 function NursifyTeam() {
     const [activeMember, setActiveMember] = useState<'Philip' | 'Jason'>('Philip');
