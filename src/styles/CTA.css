@@ -1,0 +1,71 @@
+/* .cta-container {
+    text-align: center;
+    margin: 2rem auto;
+    width: 40%;
+    border: 3px solid #ffffff1d;
+    position: relative;
+    border-radius: 11px;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--main-text);
+  } */
+
+  .cta-container {
+    text-align: center;
+    margin: 2rem auto;
+    width: 40%;
+    position: relative; 
+    border: 3px solid #ffffff1d;
+    border-radius: 11px;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--main-text);
+  }
+  
+  .cta-background {
+    background-image: url('/potential.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(3px); /* Apply the blur effect */
+    border-radius: 8px;
+    
+  }
+  
+  .cta-message {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--main-text);
+  }
+  
+  /* .cta-container::before {
+    background-image: url('/potential.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 8px;
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+  } */
+  
+  .cta-message {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--main-text);
+  }
+  

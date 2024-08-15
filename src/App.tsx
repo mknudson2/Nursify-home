@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 
 import './styles/App.css'
 import { useState } from 'react'
+import FreeConsultationCTA from './components/FreeConsultationCTA'
 
 
 
@@ -22,6 +23,9 @@ function App() {
       <Navbar/>
       <Hero />
       <NursifyServices />
+      <FreeConsultationCTA message={'Unlock Your Potential with Nursify Today!'} onClick={function (): void {
+        throw new Error('Function not implemented.')
+      } } />
       <ExperienceButtons onChange={setSelectedCategory}/>
       <InteractiveGrid category={selectedCategory}/>
       <NursifyTeam />
