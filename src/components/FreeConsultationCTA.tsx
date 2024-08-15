@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import { styled } from '@mui/system';
 import Button from '@mui/material/Button';
 import '../styles/CTA.css'; 
@@ -19,9 +20,37 @@ interface FreeConsultationCTAProps {
 }
 
 const FreeConsultationCTA: React.FC<FreeConsultationCTAProps> = ({ message, onClick }) => {
+  const ctaRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctaElement = ctaRef.current;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        } else {
+          entry.target.classList.remove('in-view');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    if (ctaElement) {
+      observer.observe(ctaElement);
+    }
+
+    return () => {
+      if (ctaElement) {
+        observer.unobserve(ctaElement);
+      }
+    };
+  }, []);
+
   return (
-    <div className="cta-container">
-      <div className="cta-background"></div> {/* Background element */}
+    <div ref={ctaRef} className="cta-container">
+      <div className="cta-background"></div>
       <p className="cta-message">{message}</p>
       <ConsultationButton variant="contained" onClick={onClick}>
         Get Your Free Consultation

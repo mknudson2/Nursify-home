@@ -10,17 +10,17 @@ interface Item {
 }
 
 const universityItems: Item[] = [
-    { id: 1, text: 'Exceed Expectations', image: '/1.jpg', description: '...' },
-    { id: 2, text: 'Save Your Students', image: '/2.jpg', description: '...' },
-    { id: 3, text: 'Flexible Financing', image: '/3.jpg', description: '...' },
-    { id: 4, text: 'Fortify Their Future', image: '/4.jpg', description: '...' },
+    { id: 1, text: 'Exceed Expectations', image: '/1.jpg', description: "Students come to your esteemed University and Nursing program to learn, prepare & pass the NCLEX®, and prepare for their first job. These days, that's the bare minimum. By partnering with Nursify Education, your current & future students won't just remember their education with you, but celebrate it." },
+    { id: 2, text: 'Save Your Students', image: '/2.jpg', description: "Every student invests their hard-earned, and often borrowed, money in you in exchange for the best education possible. Nurses want to be confident, knowledgeable, and set up for success, not just for their first job, but their entire career. Nursify Education has identified crucial skills nurses must know to avoid workplace injury and burnout." },
+    { id: 3, text: 'Flexible Financing', image: '/3.jpg', description: "Nursify Education understands budget constraints, the growing number of competitive nursing programs, and the financial red tape nursing programs and administrators have to deal with to run a successful program. This is exactly why Nursify Education provides cost-effective, fiscally responsible, value-packed offers that are custom to your needs and economic capacities." },
+    { id: 4, text: 'Fortify Their Future', image: '/4.jpg', description: "When you partner with Nursify Education, you're safeguarding your students for life. The transfer and mobility skills alone protect each of your students from injuring themselves or their patients while teaching them the most efficient and safe ways to mobilize all of their patients. They will learn how to confidently move even the most complex patients while maintaining optimal body mechanics." },
 ];
 
 const employerItems: Item[] = [
-    { id: 1, text: 'Improve Patient Satisfaction', image: '/1.jpg', description: '...' },
-    { id: 2, text: 'Reduce Nurse Burnout', image: '/2.jpg', description: '...' },
-    { id: 3, text: 'Reduce Staff Turnover', image: '/3.jpg', description: '...' },
-    { id: 4, text: 'Reduce Workplace Injury', image: '/4.jpg', description: '...' }
+    { id: 1, text: 'Improve Patient Satisfaction', image: '/1.jpg', description: "Patients don't always have a choice to come to you, but your healthcare professionals have a choice in how to best help them. Confident, compassionate, and person-centered care are the cornerstone for patient satisfaction. These are deep-seated in everything Nursify Education does. We can help you and your teams be leaders in, and champions of, patient satisfaction!" },
+    { id: 2, text: 'Reduce Nurse Burnout', image: '/3.jpg', description: "It can take as little as a few months and as much as a lifetime to become burned out. It can then take years to recover from burnout. Myriad factors lead to nurses burning out, but 3 of the top 10 are: 1) Physical Demands 2) Injury 3) Lack of Support. We have found ways to address each of these issues in our 9-module certification course. This costs an arm and a leg ONLY if you choose NOT to partner with us." },
+    { id: 3, text: 'Reduce Staff Turnover', image: '/2.jpg', description: "Caring for others doesn't stop with your patients; you know how important it is to value your employees. With the nursing shortage expected to worsen through at least 2030, championing them has to go beyond words of appreciation and small celebrations of milestones. To keep your best; you must invest. By partnering with Nursify Education, the payoff is enormous and the investment is minimal. What they learn from us will speak volumes for how much you care for their well-being and treasure them for being them." },
+    { id: 4, text: 'Reduce Workplace Injury', image: '/4.jpg', description: "Nursify Education was constructed to empower, educate, and motivate nurses primarily to reduce workplace injury and burnout. It is the core of what we achieve with everyone who gets certified in our 9-module Transfer & Mobility course. This is the only evidence-based course of its kind, and teaches your nurses skills they never learned in school, unless the school is one of our cherished partners." }
 ];
 
 const studentItems: Item[] = [

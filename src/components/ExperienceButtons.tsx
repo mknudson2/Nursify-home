@@ -17,6 +17,12 @@ const ExperienceButtons: React.FC<ExperienceButtonsProps> = ({ onChange }) => {
     return (
         <div className="exp-buttons-container">
             <button
+                className={`exp-btn ${activeCategory === 'Students & Clinicians' ? 'active' : ''}`}
+                onClick={() => handleButtonClick('Students & Clinicians')}
+            >
+                Students & Clinicians
+            </button>
+            <button
                 className={`exp-btn ${activeCategory === 'University Administrations' ? 'active' : ''}`}
                 onClick={() => handleButtonClick('University Administrations')}
             >
@@ -27,12 +33,6 @@ const ExperienceButtons: React.FC<ExperienceButtonsProps> = ({ onChange }) => {
                 onClick={() => handleButtonClick('Employers')}
             >
                 Healthcare Facilities
-            </button>
-            <button
-                className={`exp-btn ${activeCategory === 'Students & Clinicians' ? 'active' : ''}`}
-                onClick={() => handleButtonClick('Students & Clinicians')}
-            >
-                Students & Clinicians
             </button>
         </div>
     );
