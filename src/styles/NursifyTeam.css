@@ -42,6 +42,7 @@
   .toggle-switch .toggle-option.active {
     background-color: var(--accent-color);
     color: var(--main-text);
+    /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); */
   }
   
   .toggle-switch .toggle-option:not(.active) {
@@ -54,8 +55,9 @@
     bottom: 10px;
     width: 50%;
     background-color: var(--accent-color);
+    box-shadow: var(--box-shadow);
     border-radius: 50px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 0;
   }
   

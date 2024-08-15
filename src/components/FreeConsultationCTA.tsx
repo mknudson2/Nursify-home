@@ -8,7 +8,7 @@ const ConsultationButton = styled(Button)({
   color: 'white',
   padding: '10px 20px',
   fontSize: '1.25rem',
-  borderRadius: '8px',
+  borderRadius: '50px',
   '&:hover': {
     backgroundColor: 'var(--accent-color-dark)',
   },
