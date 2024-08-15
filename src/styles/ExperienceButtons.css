@@ -78,10 +78,11 @@
     background-color: var(--accent-color);
     color: var(--main-text);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+ 
     transition: .25s ease-in-out;
   }
   
-  @media (min-width: 768px){
+  @media (max-width: 768px){
     .exp-buttons-container {
       justify-content: space-evenly;
       width: 95%;
@@ -95,7 +96,7 @@
     }
   }
   
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     .exp-buttons-container {
       width: 90%;
     }
@@ -115,6 +116,6 @@
       font-size: 1.25rem;
       padding: 10px 10px;
     }
-  }
+  } */
   
   

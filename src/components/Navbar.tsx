@@ -11,10 +11,10 @@ const Navbar: React.FC = () => {
           <img src="/NursifyLogo.webp" alt="Nursify Education" width="140" height="80" />
         </a>
         <div className="nav-subheadings">
-          <p>About</p>
-          <p>Education</p>
-          <p>Certification</p>
-          <p>Contact</p>
+          <a href="#">About</a>
+          <a href="#">Education</a>
+          <a href="#">Certification</a>
+          <a href="#">Contact</a>
         </div>
         <button className="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <IconContext.Provider value={{ size: "20px", color: "var(--accent-color)" }}>

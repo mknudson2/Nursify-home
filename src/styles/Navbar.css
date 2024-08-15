@@ -29,16 +29,17 @@
     flex-grow: 1;
     margin-left: 20px;
     gap: 2rem;
-  }
+  }   
   
-  .nav-subheadings p {
+  .nav-subheadings a {
     margin: 0 15px;
     cursor: pointer;
     color: var(--main-text);
     font-size: 1.5rem;
+    text-decoration: none;
   }
   
-  .nav-subheadings p:hover {
+  .nav-subheadings a:hover {
     color: var(--accent-color);
   }
   
@@ -88,7 +89,7 @@
       gap: .1rem;
     }
     
-    .nav-subheadings p {
+    .nav-subheadings a {
       margin: 0 15px;
       font-size: 1rem;
     }
@@ -104,7 +105,7 @@
       gap: .65rem;
     }
     
-    .nav-subheadings p {
+    .nav-subheadings a {
       margin: 0 15px;
       cursor: pointer;
       color: var(--main-text);
@@ -122,7 +123,7 @@
       gap: .65rem;
     }
     
-    .nav-subheadings p {
+    .nav-subheadings a {
       margin: 0 1.75rem;
       cursor: pointer;
       color: var(--main-text);
