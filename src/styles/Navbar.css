@@ -27,14 +27,15 @@
     justify-content: end;
     flex-grow: 1;
     margin-left: 20px;
-    gap: 1.5rem;
+    gap: 1rem;
+    letter-spacing: .11rem;
   }   
   
   .nav-subheadings a {
     margin: 0 15px;
     cursor: pointer;
     color: var(--main-text);
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     text-decoration: none;
   }
   
@@ -77,75 +78,6 @@
     transition: .25s ease-in-out;
     transition: .15s ease-in-out;
   }
-  
-  @media (max-width: 767px) {
-    .navigation-container {
-      width: 100%;
-    }
-    
-    .nav-subheadings {
-      margin-left: 0;
-      gap: .1rem;
-    }
-    
-    .nav-subheadings a {
-      margin: 0 15px;
-      font-size: 1rem;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .navigation-container {
-      width: 100%;
-    }
-    
-    .nav-subheadings {
-      margin-left: 10px;
-      gap: .65rem;
-    }
-    
-    .nav-subheadings a {
-      margin: 0 15px;
-      cursor: pointer;
-      color: var(--main-text);
-      font-size: 1.05rem;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .navigation-container {
-      width: 90%;
-    }
-    
-    .nav-subheadings {
-      margin-left: 0px;
-      gap: .65rem;
-    }
-    
-    .nav-subheadings a {
-      margin: 0 1.75rem;
-      cursor: pointer;
-      color: var(--main-text);
-      font-size: 1.15rem;
-    }
-  }
-  
-  @media (min-width: 1440px) {
-    .navigation-container {
-      width: 72.5%;
-    }
-    
-    .nav-subheadings {
-      margin-left: 0px;
-      gap: .65rem;
-    }
-    
-    .nav-subheadings p {
-      margin: 0 1.75rem;
-      cursor: pointer;
-      color: var(--main-text);
-      font-size: 1.3rem;
-    }
-  }
+ 
   
   

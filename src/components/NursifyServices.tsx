@@ -5,7 +5,7 @@ const services = [
   {
     header: "Good Movement = Improvement",
     text: "Begin your transformative journey HERE. This 9-module course educates you on moving your patients safely in and out of bed with ease. Each module identifies the fundamental strategies to save you time & energy while protecting you from injury, burnout & imposter syndrome. Nurses in every setting are expected to perform these tasks, but so few are formally trained. Welcome to Nursify!",
-    img: "/mobility.webp"
+    img: "/movement.png"
   },
   {
     header: "Get Certified with Nursify",

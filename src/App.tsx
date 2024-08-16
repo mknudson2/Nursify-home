@@ -25,10 +25,15 @@ function App() {
       <NursifyServices />
       <FreeConsultationCTA message={'Unlock Your Potential with Nursify Today!'} onClick={function (): void {
         throw new Error('Function not implemented.')
-      } } />
+      } } 
+        backgroundImage='/potential.png'/>
       <ExperienceButtons onChange={setSelectedCategory}/>
       <InteractiveGrid category={selectedCategory}/>
       <NursifyTeam />
+      <FreeConsultationCTA message={'Let Our Expert Team Empower Yours!'} onClick={function (): void {
+        throw new Error('Function not implemented.')
+      } } 
+        backgroundImage='/help.png'/>
       <ModuleSlides />
       <NursifyCertification/>
       <ScrollingReviews />

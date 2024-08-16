@@ -43,7 +43,7 @@
   
   .right-column {
     position: relative;
-    height: 500px;
+    height: 50vh;
     width: 100%;
   }
   
@@ -52,8 +52,8 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     position: absolute;
     top: 0;
     left: 0;
@@ -90,6 +90,8 @@
   
   .image-container.active .overlay {
     opacity: 1;
+    backdrop-filter: blur(7px);
+    font-size: 1.25rem;
   }
   
   @media (max-width: 768px) {
@@ -127,11 +129,11 @@
   
     .image-container .overlay {
       font-size: 1.25rem;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(7px);
     }
   }
   
-  @media (min-width: 1024px){
+  /* @media (min-width: 1024px){
     .interactive-grid {
       width: 90%;
     }  
@@ -146,14 +148,14 @@
   
     .image-container .overlay {
       font-size: 1.25rem;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(7px);
     }
   
     .right-column {
       height: 50vh;
     }
-  }
-  
+  } */
+/*   
   @media (min-width: 1440px){
     .interactive-grid {
       width: 75%;
@@ -169,11 +171,11 @@
   
     .image-container .overlay {
       font-size: 1.25rem;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(7px);
     }
   
     .right-column {
       height: 50vh;
     }
-  }
+  } */
   

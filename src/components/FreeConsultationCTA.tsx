@@ -17,9 +17,10 @@ const ConsultationButton = styled(Button)({
 interface FreeConsultationCTAProps {
   message: string;
   onClick: () => void;
+  backgroundImage: string;
 }
 
-const FreeConsultationCTA: React.FC<FreeConsultationCTAProps> = ({ message, onClick }) => {
+const FreeConsultationCTA: React.FC<FreeConsultationCTAProps> = ({ message, onClick, backgroundImage }) => {
   const ctaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -50,7 +51,7 @@ const FreeConsultationCTA: React.FC<FreeConsultationCTAProps> = ({ message, onCl
 
   return (
     <div ref={ctaRef} className="cta-container">
-      <div className="cta-background"></div>
+      <div className="cta-background" style={{ backgroundImage: `url(${backgroundImage})` }} ></div>
       <p className="cta-message">{message}</p>
       <ConsultationButton variant="contained" onClick={onClick}>
         Get Your Free Consultation
