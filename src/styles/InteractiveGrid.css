@@ -83,15 +83,15 @@
     text-shadow: 1px 1px 3px black;
     transition: opacity 2s ease;
     opacity: 0;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     padding: 10%;
     line-height: 200%;
   }
   
   .image-container.active .overlay {
     opacity: 1;
-    backdrop-filter: blur(7px);
-    font-size: 1.25rem;
+    backdrop-filter: blur(3px);
+    font-size: 1.15rem;
   }
   
   @media (max-width: 768px) {
