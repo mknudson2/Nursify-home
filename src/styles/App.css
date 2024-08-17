@@ -4,6 +4,8 @@
   --accent-color: #88C82D;
   --accent-color-dark: #70b017;
   --navbar-bkg: rgba(9, 16, 60, 0.7);
+  --body-lighter: #121945;
+  --body-darker: #0b102c;
 }
 
 body {

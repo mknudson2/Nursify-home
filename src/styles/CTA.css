@@ -39,3 +39,9 @@
   margin-bottom: 1rem;
   color: var(--main-text);
 }
+
+@media (max-width: 1024px) {
+  .cta-container {
+    width: 90%;
+  }
+}
