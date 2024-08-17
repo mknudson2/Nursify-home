@@ -79,5 +79,27 @@
     transition: .15s ease-in-out;
   }
  
+
+  @media (max-width: 880px) {
+    .navigation-container {
+      width: 95%;
+    }
+
+    .nav-subheadings {
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 1rem;
+      letter-spacing: .11rem;
+      margin-bottom: 2rem;
+    }   
+  
+    .join-btn:hover {
+      background-color: var(--accent-color);
+      color: var(--main-text);
+      cursor: pointer;
+      transition: .25s ease-in-out;
+      transform: scale(1.05);
+    }
+  }
   
   
