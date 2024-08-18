@@ -108,6 +108,27 @@
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
+@media (max-width: 1440px) {
+  .services-container {
+    width: 80%;
+  }
+  
+  .services-image {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .services-container {
+    width: 90%;
+  }
+  
+  .services-image {
+    width: 375px;
+    height: 275px;
+  }
+}
 
 @media (max-width: 927px) {
   .services-container {

@@ -40,6 +40,12 @@
   color: var(--main-text);
 }
 
+@media (max-width: 1440px) {
+  .cta-container {
+    width: 80%;
+  }
+}
+
 @media (max-width: 1024px) {
   .cta-container {
     width: 90%;

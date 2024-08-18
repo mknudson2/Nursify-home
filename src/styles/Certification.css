@@ -73,9 +73,9 @@
     font-weight: bold;
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 1024px) {
     .certification-bg {
-      width: 95%;
+      width: 90%;
     }
   
     .certification-content-container p {

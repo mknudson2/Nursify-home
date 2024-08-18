@@ -104,7 +104,7 @@
     }
   }
   
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     .nursify-team {
       width: 95%;
       margin: 5rem auto 3rem;
@@ -153,5 +153,30 @@
   
     .image-column {
       margin-right: -2rem;
+    }
+  } */
+
+  @media (max-width: 1024px) {
+    .team-content {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 853px) {
+    .team-content .bio-column {
+      font-size: 1.15srem;
+    }
+  }
+
+
+  @media (max-width: 768px) { 
+    .team-content {
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
+
+    .team-content .bio-column {
+      text-align: center;
+      margin: 1.5rem auto;
     }
   }
