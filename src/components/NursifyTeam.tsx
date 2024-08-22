@@ -8,7 +8,7 @@ function NursifyTeam() {
     Philip: {
       name: 'Philip Lamoreaux, CEO of Nursify',
       image: '/Phil.png',
-      bio: `, known as "The OT Professor" on social media, is a seasoned occupational therapist, certified personal trainer, and the founder of Nursify™ Education. With a Doctorate of Occupational Therapy from the University of Nevada - Las Vegas (UNLV) and a background in neurological rehabilitation, Philip specializes in High-Intensity Training (HIT) for improving motor skills in patients with stroke, spinal cord injuries, and traumatic brain injuries.`,
+      bio: (<>, known as "<a href="https://www.instagram.com/the.ot.professor/?igsh=MW1reDd1cW9ydXVqaQ%3D%3D&utm_source=qr">The OT Professor</a>" on social media, is a seasoned occupational therapist, certified personal trainer, and the founder of Nursify™ Education. With a Doctorate of Occupational Therapy from the University of Nevada - Las Vegas (UNLV) and a background in neurological rehabilitation, Philip specializes in High-Intensity Training (HIT) for improving motor skills in patients with stroke, spinal cord injuries, and traumatic brain injuries.</>),
     },
     Jason: {
       name: 'Jason Freed, COO of Nursify,',

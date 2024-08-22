@@ -1,0 +1,24 @@
+
+.about-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about-flex h4 {
+    color: var(--accent-color);
+}
+
+.about-head h3 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-contact a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}

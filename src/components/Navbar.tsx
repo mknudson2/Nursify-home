@@ -31,19 +31,10 @@ const Navbar: React.FC = () => {
             <div className="nav-subheadings">
               <a href="#about">About</a>
               <a href="#modules">Education</a>
-              <a href="#">Certification</a>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                </ul>
-              </li>
-              <a href="#contact">Contact</a>
+              <a href="#certification">Certification</a>
+              <a href="#aboutContact">Contact</a>
             </div>
-            <button className="join-btn">Join or Sign In</button>
+            <button className="join-btn">Register / Sign In</button>
           </div>
         </div>
       </div>
@@ -58,27 +49,10 @@ const Navbar: React.FC = () => {
         <div className="nav-subheadings">
           <a href="#about">About</a>
           <a href="#modules">Education</a>
-          <a href="#">Certification</a>
-          <a href="#contact">Contact</a>
+          <a href="#certification">Certification</a>
+          <a href="#aboutContact">Contact</a>
         </div>
-        <button className="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-          <IconContext.Provider value={{ size: "20px", color: "var(--accent-color)" }}>
-            <BsList />
-          </IconContext.Provider>
-        </button>
-        <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasRightLabel">
-              <img src="/NursifyLogo.webp" alt="Nursify Education" width="150" height="75" />
-            </h5>
-            <button type="button" className="btn-close text-bg-secondary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div className="offcanvas-body">
-            <button className="join-btn">Join Nursify Now!</button>
-            <p>- or -</p>
-            <button className="join-btn">Sign In</button>
-          </div>
-        </div>
+        <a className="join-btn" href="https://nursifyeducation.com/group-type-selection">Register / Sign In</a>
       </div>
     </nav>)}
 

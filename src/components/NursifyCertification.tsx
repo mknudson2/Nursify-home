@@ -41,7 +41,7 @@ const NursifyCertification: React.FC = () => {
           </div>
           <div className="certification-content-container">
             <p>
-              As a nurse, you're a hero to so many of the lives you touch. But what if we told you there’s a way to elevate your impact even further? Earning our <span className="highlight">Nursify Certification</span> indicates your mastery of transfers and mobility to the people around you.
+              As a nurse, you're a hero to so many of the lives you touch. What if we told you there’s a way to elevate your impact even further? Earning our <a className="highlight" href='https://nursifyeducation.com/group-type-selection'>Nursify Certification</a> indicates your mastery of transfers and mobility to the people around you.
             </p>
             <br />
             <p>

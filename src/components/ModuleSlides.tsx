@@ -48,7 +48,7 @@ const ModuleSlides: React.FC = () => {
     <>
       <div className="scroll-spacer" id="modules"></div>
       <div className="gameContainer">
-        <h2><span className="section-header-highlight">Mobility</span> & Transfer Courses</h2>
+        <h2><span className="section-header-highlight">Mobility</span> & <span className="section-header-highlight">Transfer</span> Courses</h2>
         {modules.length > 0 && (
           <Swiper
             autoplay={{delay: 5000}}

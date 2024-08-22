@@ -13,8 +13,8 @@ const Footer = () => {
                 <div className="social-media">
                     <IconContext.Provider value={{ size: "25px", color: "var(--accent-color)" }}>
                         <FaFacebook />
-                        <FaInstagram />
-                        <FaTiktok />
+                        <FaInstagram href="https://www.instagram.com/nursify.education/?igsh=Z253cHQ3ZXYzbDM3&utm_source=qr"/>
+                        <FaTiktok href="https://www.tiktok.com/@theotprofessor?_t=8p4UQWE3IR5&_r=1"/>
                         <FaXTwitter />
                         <FaYoutube />
                     </ IconContext.Provider>

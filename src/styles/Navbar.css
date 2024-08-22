@@ -9,8 +9,10 @@
   -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
   box-shadow: 0 2px 5px black;
+  /* margin-bottom: 4rem; */
   align-items: center;
 }
+
 
 .navigation-container {
   display: flex;
@@ -23,13 +25,13 @@
 .nav-subheadings {
   display: flex;
   justify-content: end;
+  flex-grow: 1;
+  margin-left: 20px;
   gap: 1rem;
   letter-spacing: .11rem;
-  list-style-type: none;
-  padding-top: 1rem;
-}
+}   
 
-.nav-subheadings li a {
+.nav-subheadings a {
   margin: 0 15px;
   cursor: pointer;
   color: var(--main-text);
@@ -37,88 +39,68 @@
   text-decoration: none;
 }
 
-.nav-subheadings li a:hover {
+.nav-subheadings a:hover {
   color: var(--accent-color);
 }
 
-.mobile-menu .dropdown {
-  position: relative;
+.btn-light {
+  margin-left: 20px;
 }
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: var(--body-darker);
-  border: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-  font-size: 0.9rem;
-  min-width: 230px;
-  padding: 0.5rem 1rem;
-  ;
+.offcanvas {
+  background-color: var(--body-bkg);
+  height: 100vh;
 }
 
-.dropdown-toggle:hover + .dropdown-menu, .dropdown-menu:hover {
-  display: block;
+.offcanvas-body p {
+  color: var(--main-text);
+  font-size: 1.5rem;
+  margin: 1rem 6rem;
 }
 
-.dropdown-menu li {
-  margin: 0.5rem 0;
-}
 
-.dropdown-menu li a {
-  font-size: 0.95rem;
-}
+
 
 .join-btn {
   border: 2px solid var(--accent-color);
   border-radius: 30px;
-  padding: 10px 20px; 
-  font-size: 1.25rem;
+  /* width: 15.625rem; */
+  text-decoration: none;
+  padding: 10px 15px; 
+  font-size: 1.15rem;
   background-color: var(--body-bkg); 
   color: var(--main-text); 
   cursor: pointer; 
-  transition: .25s ease-in-out;
 }
-
 .join-btn:hover {
   background-color: var(--accent-color);
   color: var(--main-text);
+  cursor: pointer;
+  transition: .25s ease-in-out;
+  transition: .15s ease-in-out;
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 880px) {
+  .navigation-container {
+    width: 95%;
+  }
+
   .nav-subheadings {
-    display: none;
-  }
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+    letter-spacing: .11rem;
+    margin-bottom: 2rem;
+  }   
 
-  .mobile-menu {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .mobile-menu .dropdown-toggle {
-    border: 2px solid var(--accent-color);
-    padding: 10px;
-    background-color: var(--body-bkg);
+  .join-btn:hover {
+    background-color: var(--accent-color);
     color: var(--main-text);
     cursor: pointer;
-    border-radius: 30px;
-  }
-
-  .mobile-menu .dropdown-menu {
-    width: 100%;
-    text-align: center;
-  }
-
-  .dropdown-menu li a {
-    padding: 10px;
-    display: block;
-    color: var(--main-text);
+    transition: .25s ease-in-out;
+    transform: scale(1.05);
   }
 }
+

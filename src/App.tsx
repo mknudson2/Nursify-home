@@ -7,6 +7,7 @@ import NursifyTeam from './components/NursifyTeam'
 import ModuleSlides from './components/ModuleSlides'
 import ScrollingReviews from './components/ScrollingReviews'
 import NursifyCertification from './components/NursifyCertification'
+import About from './components/About'
 import Footer from './components/Footer'
 
 import './styles/App.css'
@@ -37,6 +38,7 @@ function App() {
       <ModuleSlides />
       <NursifyCertification/>
       <ScrollingReviews />
+      <About />
       <Footer />
     </>
   )

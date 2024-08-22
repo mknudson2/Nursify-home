@@ -9,6 +9,9 @@
   
   .highlight {
     color: var(--accent-color);
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
   }
   
   .left-column {
@@ -37,8 +40,12 @@
   }
   
   .left-column li.active {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--accent-color);
+  }
+
+  .left-column li:hover {
+    font-size: 2.5rem;
   }
   
   .right-column {
@@ -67,7 +74,7 @@
     opacity: 1;
     z-index: 1;
   }
-  
+
   .image-container .overlay {
     position: absolute;
     top: 0;
@@ -83,15 +90,17 @@
     text-shadow: 1px 1px 3px black;
     transition: opacity 2s ease;
     opacity: 0;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     padding: 10%;
     line-height: 200%;
   }
+
+
   
-  .image-container.active .overlay {
+  .image-container.active .overlay{
     opacity: 1;
     backdrop-filter: blur(3px);
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
   
   @media (max-width: 768px) {
