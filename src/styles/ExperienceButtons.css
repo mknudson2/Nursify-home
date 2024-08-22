@@ -82,6 +82,12 @@
     transition: .25s ease-in-out;
   }
   
+@media (max-width: 1300px) {
+  .exp-buttons-container {
+    width: 95%;
+  }
+}
+
   @media (max-width: 768px){
     .exp-buttons-container {
       justify-content: space-evenly;
