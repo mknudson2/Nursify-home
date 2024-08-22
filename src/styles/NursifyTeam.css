@@ -81,7 +81,7 @@
     width: 72.5%;
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .nursify-team {
       width: 95%;
       margin: 5rem auto 3rem;

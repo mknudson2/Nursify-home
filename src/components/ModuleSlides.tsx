@@ -46,6 +46,7 @@ const ModuleSlides: React.FC = () => {
 
   return (
     <>
+      <div className="scroll-spacer" id="modules"></div>
       <div className="gameContainer">
         <h2><span className="section-header-highlight">Mobility</span> & Transfer Courses</h2>
         {modules.length > 0 && (
@@ -79,7 +80,7 @@ const ModuleSlides: React.FC = () => {
       </div>
       <div className="gameParagraph">
         <h3>{activeModule.subtitle}</h3>
-        <p>{activeModule.text}</p>
+        <p id='certification'>{activeModule.text}</p>
       </div>
     </>
   );

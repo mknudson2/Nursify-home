@@ -29,10 +29,19 @@ const Navbar: React.FC = () => {
           </div>
           <div className="offcanvas-body">
             <div className="nav-subheadings">
-              <a href="#">About</a>
-              <a href="#">Education</a>
+              <a href="#about">About</a>
+              <a href="#modules">Education</a>
               <a href="#">Certification</a>
-              <a href="#">Contact</a>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item" href="#">Action</a></li>
+                  <li><a className="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <a href="#contact">Contact</a>
             </div>
             <button className="join-btn">Join or Sign In</button>
           </div>
@@ -47,10 +56,10 @@ const Navbar: React.FC = () => {
           <img src="/NursifyLogo.webp" alt="Nursify Education" width="140" height="80" />
         </a>
         <div className="nav-subheadings">
-          <a href="#">About</a>
-          <a href="#">Education</a>
+          <a href="#about">About</a>
+          <a href="#modules">Education</a>
           <a href="#">Certification</a>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
         <button className="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <IconContext.Provider value={{ size: "20px", color: "var(--accent-color)" }}>

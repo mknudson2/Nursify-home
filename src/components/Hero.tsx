@@ -25,7 +25,7 @@ function Hero() {
                 <h1>Move Your Patients</h1>
                 <h2>Safely, Confidently, and Efficiently</h2>
             </div>
-            <FabButton variant="extended" color="primary">
+            <FabButton variant="extended" color="primary" href='https://nursifyeducation.com/group-type-selection'>
                 Free Consultation!
             </FabButton>
         </>

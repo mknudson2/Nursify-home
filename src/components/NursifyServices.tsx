@@ -4,19 +4,27 @@ import '../styles/Services.css';
 
 const services = [
   {
-    header: "Good Movement = Improvement",
-    text: "Begin your transformative journey HERE. This 9-module course educates you on moving your patients safely in and out of bed with ease. Each module identifies the fundamental strategies to save you time & energy while protecting you from injury, burnout & imposter syndrome. Nurses in every setting are expected to perform these tasks, but so few are formally trained. Welcome to Nursify!",
-    img: "/movement.png"
+    header: ( 
+    <>Good Movement = <span className='service-highlight'>Improvement</span></>
+    ),
+    text:( <>Begin your transformative journey HERE. This <a href='#modules'>9-module course</a> educates you on moving your patients safely in and out of bed with ease. Each module identifies the fundamental strategies to save you time & energy while protecting you from injury, burnout & imposter syndrome. Nurses in every setting are expected to perform these tasks, but so few are formally trained. <a href="#about">Welcome to Nursify Education</a>!</>),
+    img: "/movement.png",
+    altText: "Good Movement = Improvement",
+    linkedImage: ""
   },
   {
-    header: "Get Certified with Nursify",
-    text: "Our passion is empowering, educating and training nurses so they can achieve new heights they didn't think were possible in the hope that they can do the same for their patients. Show your employer you have a skillset very few nurses ever formally acquired. By completing our 9-module course, you'll receive our official certification that proves you can transfer and move patient's better than most.",
-    img: "/certified.jpg"
+    header: (<><span className="service-highlight">Certify</span> with <span className="service-highlight">Nursify</span></>),
+    text: (<>Our passion is empowering, educating and training nurses so they can achieve new heights they didn't think were possible in the hope that they can do the same for their patients. Show your employer you have a skillset very few nurses ever formally acquired. By completing our <a href="#modules">9-module course</a>, you'll receive our official certification that proves you can transfer and move patient's better than most.</>),
+    img: "/certified.jpg",
+    altText: "Certify with Nursify",
+    linkedImage: ""
   },
   {
-    header: "Nursing Programs - Your Competitive Advantage!",
+    header: (<><a href="https://nursifyeducation.com/group-type-selection">Nursing Schools & Employers - This is for you!</a></>),
     text: "Research indicates most nurses aren't receiving enough training on the clinical or soft skills required to optimally perform their jobs. We have created the solution and are ready to flexibly integrate it into your curriculums while minding your budget! Find a flexible plan for your University, Hospital, or Team. Students and faculty all the way to veteran nurses will be equipped for success better than ever. Nursify supports our members every step of the way.",
-    img: "/nurses.jpg"
+    img: "/nurses.jpg",
+    altText: "Nursing Schools & Employers - This is for you!",
+    linkedImage: "https://nursifyeducation.com/group-type-selection"
   }
 ];
 
@@ -66,13 +74,15 @@ const NursifyServices: React.FC = () => {
         <div className="services-container">
           <h3>Our <span className="service-highlight">Services</span></h3>
           <div className="services-flex-content">
-            {services.map(({ header, text, img }, index) => (
+            {services.map(({ header, text, img, altText, linkedImage }, index) => (
               <div className={`services-row ${index % 2 === 0 ? 'row-normal' : 'row-reversed'}`} key={index}>
                 <div className="services-text">
                   <h4>{header}</h4>
                   <p>{text}</p>
                 </div>
-                <img src={img} alt={header} className="services-image" />
+                <a href={linkedImage}>
+                  <img src={img} alt={altText} className="services-image" />
+                </a>
               </div>
             ))}
           </div>
