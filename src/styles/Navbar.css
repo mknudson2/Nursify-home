@@ -68,7 +68,7 @@
   text-decoration: none;
   padding: 10px 15px; 
   font-size: 1.15rem;
-  background-color: var(--body-bkg); 
+  background-color: transparent; 
   color: var(--main-text); 
   cursor: pointer; 
 }
