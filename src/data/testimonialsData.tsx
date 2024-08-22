@@ -38,7 +38,7 @@ export interface Testimonial {
       review: 'He really pushes us to think outside of what is traditionally known.',
       keyphrase: '"Amazing Quality!"',
       rating: 4,
-      fullReview: "I'm going to come and I am becoming he pushes you to think outside of the box while also creating an environment that's really conducive to your learning style specifically and so he's very flexible and adaptable to what you need which I think is an amazing quality to have as someone who's a mentor along with that he also really pushes us to think outside of which traditionally known and challenges those Concepts."
+      fullReview: "He pushes you to think outside of the box while also creating an environment that's really conducive to your learning style specifically and so he's very flexible and adaptable to what you need which I think is an amazing quality to have as someone who's a mentor along with that he also really pushes us to think outside of which traditionally known and challenges those Concepts."
     },
     {
       id: 4,
@@ -109,7 +109,7 @@ export interface Testimonial {
       review: 'He really pushes us to think outside of what is traditionally known.',
       keyphrase: '"Amazing Quality!"',
       rating: 4,
-      fullReview: "I'm going to come and I am becoming he pushes you to think outside of the box while also creating an environment that's really conducive to your learning style specifically and so he's very flexible and adaptable to what you need which I think is an amazing quality to have as someone who's a mentor along with that he also really pushes us to think outside of which traditionally known and challenges those Concepts."
+      fullReview: "He pushes you to think outside of the box while also creating an environment that's really conducive to your learning style specifically, and so he's very flexible and adaptable to what you need which I think is an amazing quality to have as someone who's a mentor along with that he also really pushes us to think outside of which traditionally known and challenges those Concepts."
     },
     {
       id: 11,
