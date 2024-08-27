@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import {  useEffect, useCallback } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import '../styles/Services.css';
 

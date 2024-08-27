@@ -12,6 +12,10 @@ const ConsultationButton = styled(Button)({
   '&:hover': {
     backgroundColor: 'var(--accent-color-dark)',
   },
+  '@media (max-width: 768px)' : {
+    fontSize: '.8rem',
+    padding: '8px 16px',
+  }
 });
 
 interface FreeConsultationCTAProps {

@@ -42,7 +42,6 @@
   .toggle-switch .toggle-option.active {
     background-color: var(--accent-color);
     color: var(--main-text);
-    /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); */
   }
   
   .toggle-switch .toggle-option:not(.active) {
@@ -109,57 +108,6 @@
     }
   }
   
-  /* @media (min-width: 1024px) {
-    .nursify-team {
-      width: 95%;
-      margin: 5rem auto 3rem;
-    }
-    
-    .nursify-team h3 {
-      font-size: 3.7rem;
-      margin-bottom: 20px;
-    }
-  
-    .toggle-switch {
-      width: 72.5%;
-    }
-  
-    .team-content .bio-column {
-      text-align: left;
-      font-size: 1.25rem;
-      line-height: 1.75;
-      width: 90%;
-    }
-  }
-  
-  @media (min-width: 1440px) {
-    .nursify-team {
-      width: 75%;
-      margin: 5rem auto 3rem;
-    }
-    
-    .nursify-team h3 {
-      font-size: 4rem;
-      margin-bottom: 20px;
-    }
-  
-    .toggle-switch {
-      width: 50%;
-    }
-  
-    .team-content .bio-column {
-      text-align: left;
-      font-size: 1.25rem;
-      line-height: 1.75;
-      width: 72.5%;
-      margin-left: -2rem;
-  
-    }
-  
-    .image-column {
-      margin-right: -2rem;
-    }
-  } */
 
   @media (max-width: 1024px) {
     .team-content {
@@ -183,5 +131,9 @@
     .team-content .bio-column {
       text-align: center;
       margin: 1.5rem auto;
+    }
+
+    .toggle-switch .toggle-option{
+      font-size: 1rem;
     }
   }
