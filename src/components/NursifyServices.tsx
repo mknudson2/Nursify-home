@@ -1,7 +1,12 @@
-import { useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import '../styles/Services.css';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import { EffectCards } from 'swiper/modules';
 const services = [
   {
     header: ( 
@@ -30,6 +35,7 @@ const services = [
 
 const NursifyServices: React.FC = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 690px)' });
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleIntersection = useCallback((entries: IntersectionObserverEntry[]) => {
     entries.forEach(entry => {
@@ -55,21 +61,32 @@ const NursifyServices: React.FC = () => {
   return (
     <>
       {isTabletOrMobile ? (
-        <div className="mobile-service-card">
-          <h3>Our <span className="highlight">Services</span></h3>
-          <div className="buttons">
-            <button>Movement</button>
-            <button>Certification</button>
-            <button>Programs</button>
+        <>
+          <div className="services-header">
+            <h3>Our <span className="service-highlight">Services</span></h3>
           </div>
-          <div className="content-container">
-            <div className="card-content">
-              <h4></h4>
-              <p></p>
-            </div>
-          </div>
-          <img src="" alt="" />
-        </div>
+          <Swiper
+            effect={'cards'}
+            grabCursor={true}
+            modules={[EffectCards]}
+            loop={true}
+            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            className="mySwiper"
+          >
+            {services.map((card, key) => (
+              <SwiperSlide key={key}>
+                <div className="card-content">
+                  <div className="card-top">
+                    <h4>{card.header}</h4>
+                    <img src={card.img} alt={card.altText} className="card-image" />
+                  </div>
+                  <p>{card.text}</p>
+                  </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          {/* <h4 className="card-title">{services[activeIndex]?.header}</h4> */}
+        </>
       ) : (
         <div className="services-container">
           <h3>Our <span className="service-highlight">Services</span></h3>

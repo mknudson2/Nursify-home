@@ -48,6 +48,7 @@
     justify-content: start;
     padding: 1rem;
     backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
 }
 
 .about-card h4 {

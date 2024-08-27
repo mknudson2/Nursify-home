@@ -15,7 +15,7 @@ const About = () => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     } else {
-                        entry.target.classList.remove('visible'); // Optional, removes 'visible' when out of view
+                        entry.target.classList.remove('visible'); 
                     }
                 });
             },
@@ -28,12 +28,10 @@ const About = () => {
             observer.observe(card);
         });
 
-        // Also observe the image
         if (imageRef.current) {
             observer.observe(imageRef.current);
         }
 
-        // Cleanup observer
         return () => {
             aboutCards.forEach((card) => {
                 observer.unobserve(card);
