@@ -35,7 +35,7 @@ const services = [
 
 const NursifyServices: React.FC = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 690px)' });
-  const [activeIndex, setActiveIndex] = useState(0);
+
 
   const handleIntersection = useCallback((entries: IntersectionObserverEntry[]) => {
     entries.forEach(entry => {
@@ -70,7 +70,6 @@ const NursifyServices: React.FC = () => {
             grabCursor={true}
             modules={[EffectCards]}
             loop={true}
-            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             className="mySwiper"
           >
             {services.map((card, key) => (
@@ -85,7 +84,6 @@ const NursifyServices: React.FC = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          {/* <h4 className="card-title">{services[activeIndex]?.header}</h4> */}
         </>
       ) : (
         <div className="services-container">
