@@ -4,7 +4,7 @@
     position: relative;
     flex-direction: column;
     align-items: start;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -54,20 +54,21 @@
     font-size: 2rem;
 }
 
-.group2 {
-    text-align: center;
+.about-card p {
+    font-size: 1.1rem;
 }
 
-.special-card {
-
+.group2 {
+    text-align: center;
 }
 
 .about-image {
     z-index: -1;
     position: absolute;
     height: 75%;
-    right: -4rem;
-    top: -5rem;
+    top: -6rem;
+    right: 0;   
+    transform-style: preserve-3d;
     transform: perspective(800px) rotateY(-60deg) rotateZ(5deg) rotateX(5deg); 
     opacity: 0; 
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
