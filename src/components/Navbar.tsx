@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
           <a href="#about">About</a>
           <a href="#modules">Education</a>
           <a href="#certification">Certification</a>
-          <a href="#aboutContact">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
         <a className="join-btn" href="https://nursifyeducation.com/student-sales-page-page">Register / Sign In</a>
       </div>
