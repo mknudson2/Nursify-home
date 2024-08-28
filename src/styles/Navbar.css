@@ -81,6 +81,13 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 1024px) {
+  .navigation-container {
+    width: 90%;
+  }
+
+}
+
 
 @media (max-width: 880px) {
   .navigation-container {

@@ -231,6 +231,12 @@
   opacity: 0;
 }
 
+@media (max-width: 1440px) {
+  .active-testimonial-details p {
+    width: 85%;
+  }
+}
+
 @media (max-width: 1024px) {
   .testimonials-carousel h3 {
       font-size: 3.5rem;
@@ -242,6 +248,7 @@
 
   .active-testimonial-details p {
       font-size: 1.25rem;
+      width: 90%;
   }
 }
 

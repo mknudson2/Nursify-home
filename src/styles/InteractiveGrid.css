@@ -103,6 +103,18 @@
     font-size: 1.5rem;
   }
 
+  @media (max-width: 1024px) {
+    .interactive-grid {
+      width: 90%;
+      margin: 0 auto;
+      
+    }
+
+    .left-column li.active {
+      font-size: 2rem;
+    }
+  
+  }
   
   @media (max-width: 768px) {
     .interactive-grid {
@@ -131,6 +143,13 @@
     
     .left-column li {
       font-size: 1rem;
+    }
+
+    .left-column li.active {
+      font-size: 1.75rem;
+    }
+    .left-column li:hover {
+      font-size: 1.75rem;
     }
     
     .right-column {

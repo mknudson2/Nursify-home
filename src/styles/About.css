@@ -80,11 +80,45 @@
     opacity: 1; 
 }
 
+@media (max-width: 1440px) {
+    .about-image {
+        height: 50%;
+        right: -2rem;
+        top: -2rem;
+    }
+}
+
 
 @media (max-width: 1126px) {
     
     .about-head h3 {
         white-space: normal;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-flex {
+        width: 90%;
+    }
+    
+    .about-head h3 {
+        width: 70%;
+    }
+
+    .about-body {
+        width: 100%;
+    }
+    
+    .about-card h4 {
+        font-size: 1.5rem;
+    }
+    .about-card p {
+        font-size: 1rem;
+    }
+
+    .about-image {
+        height: 50%;
+        top: -3rem;
     }
 }
 
@@ -114,8 +148,17 @@
         opacity: 1;
     }
     .about-image {
-        height:175px;
-        width: 175px;
+        height:250px;
+        width: 250px;
+        top: -3.5rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-image {
+        height: 125px;
+        width: 125px;
         top: 1rem;
         right: -.5rem;
     }

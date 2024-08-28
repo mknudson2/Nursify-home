@@ -34,3 +34,39 @@
     color: var(--accent-color);
     font-weight: bold;
 }
+
+@media (min-width: 768px) {
+    .contact-flex {
+        padding: 1rem;
+        gap: 2rem
+    }
+
+    .contact-body p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-flex {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .contact-head h3 {
+        font-size: 3rem;
+
+        margin: 0 auto;
+    }
+
+    .contact-body p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contact-head h3 {
+        font-size: 4.5rem;
+        width: 90%;
+    }
+
+}
