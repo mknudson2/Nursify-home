@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
               <a href="#about">About</a>
               <a href="#modules">Education</a>
               <a href="#certification">Certification</a>
-              <a href="#aboutContact">Contact</a>
+              <a href="#contact">Contact</a>
             </div>
             <button className="join-btn">Register / Sign In</button>
           </div>
