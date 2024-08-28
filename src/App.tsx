@@ -5,8 +5,9 @@ import ExperienceButtons from './components/ExperienceButtons'
 import InteractiveGrid from './components/InteractiveGrid'
 import NursifyTeam from './components/NursifyTeam'
 import ModuleSlides from './components/ModuleSlides'
-import ScrollingReviews from './components/ScrollingReviews'
 import NursifyCertification from './components/NursifyCertification'
+import ScrollingReviews from './components/ScrollingReviews'
+
 import About from './components/About'
 import Footer from './components/Footer'
 

@@ -51,31 +51,32 @@ const ModuleSlides: React.FC = () => {
         <h2><span className="section-header-highlight">Mobility</span> & <span className="section-header-highlight">Transfer</span> Courses</h2>
         {modules.length > 0 && (
           <Swiper
-            autoplay={{delay: 5000}}
-            speed={1500}
-            effect={"coverflow"}
-            grabCursor={true}
-            centeredSlides={true}
-            loop={true}
-            slidesPerView={3}
-            coverflowEffect={{
-              rotate: 15,
-              stretch: 0,
-              depth: 100,
-              modifier: 2.5,
-            }}
-            pagination={{ el: ".swiper-pagination", clickable: true }}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
-            className="swiper_container"
-            onSlideChange={handleSlideChange}
-          >
-            {modules.map((module, index) => (
-              <SwiperSlide key={index} className="swiper-slide">
-                <h1 className="moduleText">{module.title}</h1>
-                <img className="moduleImg" src={module.background_image} alt={module.title} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          autoplay={{ delay: 5000 }}
+          speed={1500}
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={window.innerWidth < 600 ? 1 : 3} // Change to 1 slide for small screens
+          coverflowEffect={{
+            rotate: 20,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: false,
+          }}
+          pagination={{ el: ".swiper-pagination", clickable: true }}
+          modules={[EffectCoverflow, Pagination, Autoplay]}
+          className="swiper_container"
+          onSlideChange={handleSlideChange}
+        >
+          {modules.map((module, index) => (
+            <SwiperSlide key={index} className="swiper-slide">
+              <h1 className="moduleText">{module.title}</h1>
+              <img className="moduleImg" src={module.background_image} alt={module.title} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
         )}
       </div>
       <div className="gameParagraph">
