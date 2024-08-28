@@ -29,6 +29,10 @@
     font-size: 2.5rem;
 }
 
+.contact-body p {
+    font-size: .9rem;
+}
+
 .contact-body a {
     text-decoration: none;
     color: var(--accent-color);

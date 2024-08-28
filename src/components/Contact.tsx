@@ -9,7 +9,7 @@ const Contact = () => {
         </div>
         <div className="contact-flex">
             <div className="contact-image">
-              <img src="/contact.jpg" alt="Contact Nursify Education" width="150" height="150" />
+              <img src="/contact.jpg" alt="Contact Nursify Education" width="125" height="125" />
             </div>   
             <div className="contact-body">
               <p>
