@@ -9,38 +9,56 @@ const About = () => {
     const imageRef = useRef<HTMLImageElement | null>(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
+        const cardObserver = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     } else {
-                        entry.target.classList.remove('visible'); 
+                        entry.target.classList.remove('visible');
                     }
                 });
             },
             { threshold: 0.1 }
         );
-
+    
         const aboutCards = document.querySelectorAll('.about-card');
-
-        aboutCards.forEach((card) => {
-            observer.observe(card);
-        });
-
-        if (imageRef.current) {
-            observer.observe(imageRef.current);
+    
+        // Apply observer to cards only at max-width 768px
+        if (window.innerWidth <= 768) {
+            aboutCards.forEach((card) => {
+                cardObserver.observe(card);
+            });
         }
-
+    
+        // Observer for the image
+        const imageObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+    
+        if (imageRef.current) {
+            imageObserver.observe(imageRef.current);
+        }
+    
         return () => {
             aboutCards.forEach((card) => {
-                observer.unobserve(card);
+                cardObserver.unobserve(card);
             });
             if (imageRef.current) {
-                observer.unobserve(imageRef.current);
+                imageObserver.unobserve(imageRef.current);
             }
         };
     }, []);
+    
 
     return (
         <section className="about-flex" id="about">

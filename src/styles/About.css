@@ -107,12 +107,16 @@
 
     .about-card {
         margin: 1rem auto;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
-
+    .about-card.visible {
+        opacity: 1;
+    }
     .about-image {
         height:175px;
         width: 175px;
         top: 1rem;
-        right: -1rem;
+        right: -.5rem;
     }
 }
