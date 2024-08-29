@@ -14,6 +14,8 @@ import Footer from './components/Footer'
 import './styles/App.css'
 import { useState } from 'react'
 import FreeConsultationCTA from './components/FreeConsultationCTA'
+import MobileReviews from './components/MobileReviews'
+import ResponsiveReviews from './components/ResponsiveReviews'
 
 
 
@@ -38,9 +40,11 @@ function App() {
         backgroundImage='/help.png'/>
       <ModuleSlides />
       <NursifyCertification/>
-      <ScrollingReviews />
+      {/* <ScrollingReviews /> */}
+      <ResponsiveReviews />
       <About />
       <Contact />
+      {/* <MobileReviews /> */}
       <Footer />
     </>
   )
