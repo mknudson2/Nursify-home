@@ -3,9 +3,11 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
     width: 90%;
-    margin: 0 auto;
+    margin: 5rem auto 5rem;
     padding: 0 1rem;
 }
 
@@ -17,6 +19,7 @@
     font-size: 4.5rem;
     margin-bottom: 1rem;
     white-space: nowrap;
+    text-align: left;
 }
 
 .about-contact a {
@@ -27,11 +30,14 @@
 
 .about-body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-grow: 1;
-    gap: 1rem;
-    width: 80%;
+    width: 100%;
+
 }
+
+
+
 
 .about-card {
     padding: 1rem;
@@ -42,7 +48,7 @@
     /* background-color: rgba(0, 0, 0, 0.5); */
     /* background-color: rgba(0, 0, 0, 0.3); */
     /* background-color: rgba(0, 0, 0, 0.1); */
-    margin: 2rem auto;
+    margin: .5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -58,17 +64,27 @@
 .about-card p {
     font-size: 1.1rem;
 }
-
+/* 
 .group2 {
     text-align: center;
+} */
+
+.card-sub-flex {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.card-sub-flex img {
+    margin-top: -3rem;
 }
 
 .about-image {
-    z-index: -1;
-    position: absolute;
-    height: 75%;
-    top: -6rem;
-    right: 0;   
+    z-index: 2;
+    /* position: absolute; */
+    /* top: -6rem;
+    right: 0rem;    */
     transform-style: preserve-3d;
     transform: perspective(800px) rotateY(-60deg) rotateZ(5deg) rotateX(5deg); 
     opacity: 0; 
@@ -78,6 +94,26 @@
 .about-image.visible {
     transform: perspective(800px) rotateY(-35deg) rotateZ(5deg) rotateX(5deg); 
     opacity: 1; 
+    animation: rotate 3s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(-35deg)
+        rotateY(5deg)
+        rotateZ(5deg);
+    }
+    50% {
+        transform: rotateY(-40deg) 
+        rotateY(4deg)
+        rotateZ(4deg);
+    }
+
+    100% {
+        transform: rotateY(-35deg) 
+        rotateY(5deg)
+        rotateZ(5deg);
+    }
 }
 
 @media (max-width: 1440px) {

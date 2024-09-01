@@ -21,3 +21,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.wrapping-text {
+  text-wrap: nowrap;
+}

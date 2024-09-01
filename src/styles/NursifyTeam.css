@@ -1,8 +1,8 @@
 .nursify-team {
     text-align: center;
     color: var(--main-text);
-    width: 72.5%;
-    margin: 5rem auto 3rem;
+    width: 95%;
+    margin: -20rem auto 3rem;
   }
   
   .nursify-team h3 {
@@ -77,12 +77,19 @@
     text-align: left;
     font-size: 1.25rem;
     line-height: 2;
-    width: 80%;
+    width: 95%;
   }
 
   .bio-column a {
     color: var(--accent-color);
     text-decoration: none;
+  }
+
+  @media (max-width: 925px) {
+    .team-content .bio-column {
+      font-size: 1.15rem;
+      line-height: 1.75;
+    }
   }
   
   @media (max-width: 768px) {

@@ -1,8 +1,21 @@
 import { IconContext } from "react-icons";
 import { FaInstagram, FaYoutube, FaTiktok, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Fab from '@mui/material/Fab';
+import { styled } from '@mui/system';
 
 import '../styles/Footer.css';
+
+const FabButton = styled(Fab)({
+    position: 'fixed',
+    bottom: '7rem',
+    right: '2rem',
+    zIndex: 2000,
+    backgroundColor: 'var(--accent-color)',
+    color: 'white', '&:hover' :{
+        backgroundColor: 'var(--accent-color-dark)'
+    },
+  });
 
 const Footer = () => {
   return (
@@ -25,6 +38,9 @@ const Footer = () => {
                 </div>
 
             </div>
+            <FabButton variant="extended" color="primary" href='https://nursifyeducation.com/group-type-selection'>
+                Free Consultation!
+            </FabButton>
         </section>
     </>
   )

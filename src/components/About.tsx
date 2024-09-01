@@ -3,8 +3,8 @@ import '../styles/About.css';
 import { about, AboutInterface } from '../data/AboutData';
 
 const About = () => {
-    const aboutGroup1 = about.filter((data: AboutInterface) => data.id >= 1 && data.id <= 3);
-    const aboutGroup2 = about.filter((data: AboutInterface) => data.id === 4);
+    const aboutGroup1 = about.filter((data: AboutInterface) => data.id >= 2 && data.id <= 4);
+    const aboutGroup2 = about.filter((data: AboutInterface) => data.id === 1);
 
     const imageRef = useRef<HTMLImageElement | null>(null);
 
@@ -62,26 +62,31 @@ const About = () => {
 
     return (
         <section className="about-flex" id="about">
-            <div className="about-head">
-                <h3>What is <span className="highlight">Nursify Education</span>?</h3>
-            </div>
-            <div className="about-body group1">
-                {aboutGroup1.map((data: AboutInterface) => (
-                    <div key={data.id} className="about-card">
-                        <h4>{data.title}</h4>
-                        <p>{data.description}</p>
-                    </div>
-                ))}
-            </div>
-            {aboutGroup2 && (
-                <div className="about-body group2">
-                    <div className="about-card special-card">
-                        <h4>{aboutGroup2[0].title}</h4>
-                        <p>{aboutGroup2[0].description}</p>
-                    </div>
+            <div className="about-body-container">
+                <div className="about-head">
+                    <h3>What is <span className="highlight">Nursify Education</span>?</h3>
                 </div>
-            )}
-            <img ref={imageRef} className="about-image" src="/CertificationBadge.png" alt="Nursify Education" />
+                    <div className="about-body group2">
+                        <div className="about-card ">
+                            <h4>{aboutGroup2[0].title}</h4>
+                            <div className="card-sub-flex">
+                                <p>{aboutGroup2[0].description}</p>
+                                <img ref={imageRef} className="about-image" src="/CertificationBadge.png" alt="Nursify Education" style={{height: '200px', width: '200px'}} />
+                            </div>
+                        </div>
+                {aboutGroup1 && (
+                <div className="about-body group1">
+                    {aboutGroup1.map((data: AboutInterface) => (
+                        <div key={data.id} className="about-card">
+                            <h4>{data.title}</h4>
+                            <p>{data.description}</p>
+                        </div>
+                    ))}
+                </div>
+                )}</div>
+                
+            </div>
+
         </section>
     );
 };

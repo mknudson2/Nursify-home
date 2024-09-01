@@ -67,10 +67,7 @@
   .certification-content-container p {
     font-size: 1.5rem;
   }
-  
-  .certification-content-container a {
-    text-decoration: none;
-  }
+
   
   .highlight {
     color: var(--accent-color);
@@ -94,5 +91,31 @@
 
     .certifcation-content-container p {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .certification-bg {
+      width: 95%;
+    }
+    
+    .certification-content-container {
+      width: 95%;
+    }
+
+    .header-container h3 {
+      font-size: 2rem;
+    }
+    .certifcation-content-container p {
+      font-size: .85rem;
+    }
+  }
+
+  @media (max-width: 484px) {
+    .header-container h3 {
+      font-size: 1.5rem;
+    }
+    .certification-content-container p {
+      font-size: .80rem;
     }
   }

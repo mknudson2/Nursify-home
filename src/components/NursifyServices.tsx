@@ -12,21 +12,21 @@ const services = [
     header: ( 
     <>Good Movement = <span className='service-highlight'>Improvement</span></>
     ),
-    text:( <>Begin your transformative journey HERE. This <a href='#modules'>9-module course</a> educates you on moving your patients safely in and out of bed with ease. Each module identifies the fundamental strategies to save you time & energy while protecting you from injury, burnout & imposter syndrome. Nurses in every setting are expected to perform these tasks, but so few are formally trained. <a href="#about">Welcome to Nursify Education</a>!</>),
+    text:( <>Begin your transformative journey <a href="#modules" className="highlight">HERE</a>. This <a href='#modules' >9-module course</a> educates you on moving your patients safely in and out of bed with ease. Each module identifies the fundamental strategies to save you time & energy while protecting you from injury, burnout & imposter syndrome. Nurses in every setting are expected to perform these tasks, but so few are formally trained. <a href="#about">Welcome to Nursify Education</a>!</>),
     img: "/movement.png",
     altText: "Good Movement = Improvement",
     linkedImage: ""
   },
   {
     header: (<><span className="service-highlight">Certify</span> with <span className="service-highlight">Nursify</span></>),
-    text: (<>Our passion is empowering, educating and training nurses so they can achieve new heights they didn't think were possible in the hope that they can do the same for their patients. Show your employer you have a skillset very few nurses ever formally acquired. By completing our <a href="#modules">9-module course</a>, you'll receive our official certification that proves you can transfer and move patient's better than most.</>),
+    text: (<>Our passion is empowering, educating and training nurses so they can achieve new heights they didn't think were possible in the hope that they can do the same for their patients. Show your employer you have a skillset very few nurses ever formally acquired. By completing our <a href="#modules">9-module course</a>, you'll receive our official certification that proves you can transfer and move patient's <span>better than most.</span></>),
     img: "/certified.jpg",
     altText: "Certify with Nursify",
     linkedImage: ""
   },
   {
-    header: (<><a href="https://nursifyeducation.com/group-type-selection">Nursing Schools & Employers - This is for you!</a></>),
-    text: "Research indicates most nurses aren't receiving enough training on the clinical or soft skills required to optimally perform their jobs. We have created the solution and are ready to flexibly integrate it into your curriculums while minding your budget! Find a flexible plan for your University, Hospital, or Team. Students and faculty all the way to veteran nurses will be equipped for success better than ever. Nursify supports our members every step of the way.",
+    header: (<><a href="https://nursifyeducation.com/group-type-selection">Nursing Schools & Employers <span style={{color: 'white'}}>-</span> <br/><span style={{color: 'white'}}>This is for you!</span></a></>),
+    text: (<>Research indicates most nurses aren't receiving enough training on the clinical or soft skills required to optimally perform their jobs. We have created the solution and are ready to flexibly integrate it into your curriculums while minding your budget! Find a flexible plan for your University, Hospital, or Team. Students and faculty all the way to veteran nurses will be equipped for success better than ever. Nursify supports our members every step of the way.</>),
     img: "/nurses.jpg",
     altText: "Nursing Schools & Employers - This is for you!",
     linkedImage: "https://nursifyeducation.com/group-type-selection"
