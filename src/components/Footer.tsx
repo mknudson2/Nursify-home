@@ -7,8 +7,9 @@ import '../styles/Footer.css';
 
 const FabButton = styled(Fab)({
     position: 'fixed',
+    fontSize: '.8rem',
     bottom: '7rem',
-    right: '2rem',
+    right: '1rem',
     zIndex: 2000,
     backgroundColor: 'var(--accent-color)',
     color: 'white', '&:hover' :{
