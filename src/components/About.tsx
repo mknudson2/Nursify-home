@@ -71,7 +71,7 @@ const About = () => {
                             <h4>{aboutGroup2[0].title}</h4>
                             <div className="card-sub-flex">
                                 <p>{aboutGroup2[0].description}</p>
-                                <img ref={imageRef} className="about-image" src="/CertificationBadge.png" alt="Nursify Education" style={{height: '200px', width: '200px'}} />
+                                <img ref={imageRef} className="about-image" src="/CertificationBadge.png" alt="Nursify Education"  />
                             </div>
                         </div>
                 {aboutGroup1 && (

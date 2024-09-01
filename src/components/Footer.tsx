@@ -1,6 +1,5 @@
 import { IconContext } from "react-icons";
 import { FaInstagram, FaYoutube, FaTiktok, FaFacebook } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import Fab from '@mui/material/Fab';
 import { styled } from '@mui/system';
 
@@ -28,7 +27,6 @@ const Footer = () => {
                         <FaFacebook />
                         <FaInstagram href="https://www.instagram.com/nursify.education/?igsh=Z253cHQ3ZXYzbDM3&utm_source=qr"/>
                         <FaTiktok href="https://www.tiktok.com/@theotprofessor?_t=8p4UQWE3IR5&_r=1"/>
-                        <FaXTwitter />
                         <FaYoutube />
                     </ IconContext.Provider>
                 </div>

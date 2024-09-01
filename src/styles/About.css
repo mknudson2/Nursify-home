@@ -7,7 +7,7 @@
     justify-content: center;
     text-align: left;
     width: 90%;
-    margin: 5rem auto 5rem;
+    margin: 10rem auto 5rem;
     padding: 0 1rem;
 }
 
@@ -78,13 +78,12 @@
 
 .card-sub-flex img {
     margin-top: -3rem;
+    height: 200px;
+    width: 200px;
 }
 
 .about-image {
     z-index: 2;
-    /* position: absolute; */
-    /* top: -6rem;
-    right: 0rem;    */
     transform-style: preserve-3d;
     transform: perspective(800px) rotateY(-60deg) rotateZ(5deg) rotateX(5deg); 
     opacity: 0; 
@@ -94,7 +93,7 @@
 .about-image.visible {
     transform: perspective(800px) rotateY(-35deg) rotateZ(5deg) rotateX(5deg); 
     opacity: 1; 
-    animation: rotate 3s ease-in-out infinite;
+    animation: rotate 4s ease-in-out infinite;
 }
 
 @keyframes rotate {
@@ -104,7 +103,7 @@
         rotateZ(5deg);
     }
     50% {
-        transform: rotateY(-40deg) 
+        transform: rotateY(-37.5deg) 
         rotateY(4deg)
         rotateZ(4deg);
     }
@@ -138,7 +137,8 @@
     }
     
     .about-head h3 {
-        width: 70%;
+        width: 100%;
+        font-size: 3.75rem;
     }
 
     .about-body {
@@ -158,10 +158,10 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .about-flex {
         width: 100%;
-        margin: 0 auto;
+        margin: 5rem auto;
     }
     .about-head h3 {
         font-size: 2.5rem;
@@ -191,11 +191,12 @@
     }
 }
 
-@media (max-width: 500px) {
-    .about-image {
-        height: 125px;
-        width: 125px;
-        top: 1rem;
-        right: -.5rem;
+
+@media (max-width: 550px) {
+    .card-sub-flex img {
+        position: absolute;
+        z-index: 2;
+        height: 150px;
+        width: 150px;
     }
 }

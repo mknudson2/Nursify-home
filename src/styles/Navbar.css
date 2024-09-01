@@ -81,11 +81,42 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 1200px) {
+  .navigation-container {
+    width: 85%;
+  }
+  .join-btn {
+    font-size: 1.05rem;
+  }
+
+  .nav-subheadings a {
+    font-size: 1.05rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .navigation-container {
     width: 90%;
   }
 
+}
+
+@media (max-width: 952px) {
+  .join-btn {
+    font-size: .9rem;
+    padding: 8px 12.5px;
+    }
+  
+    .nav-subheadings a{
+      font-size: .9rem;
+    }
+}
+
+@media (max-width: 916px) {
+  .join-btn {
+    font-size: .8rem;
+    padding: 8px 12.5px;
+    }
 }
 
 

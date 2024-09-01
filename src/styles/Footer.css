@@ -7,10 +7,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 72.5%;
+    justify-content: space-between;
+    width: 90%;
     height: 6rem;
     margin: 5rem auto 0;
+  }
+  
+  .footer-container p {
+    padding-top: 15px;
   }
   
   .social-media {
@@ -36,6 +40,12 @@
   
   .legal-links p:hover{
     color: var(--accent-color);
+  }
+
+  @media (max-width: 950px) {
+    .footer-container {
+      width: 90%;
+    }
   }
   
   @media(max-width: 768px) {
