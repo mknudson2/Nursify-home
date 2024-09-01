@@ -73,7 +73,11 @@ const NursifyServices: React.FC = () => {
             className="mySwiper"
           >
             {services.map((card, key) => (
-              <SwiperSlide key={key}>
+              <SwiperSlide 
+                key={key}
+                style={{
+                  boxShadow: '4px 4px 8px black',
+              }}>
                 <div className="card-content">
                   <div className="card-top">
                     <h4>{card.header}</h4>

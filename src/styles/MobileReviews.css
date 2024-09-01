@@ -87,16 +87,16 @@
   
   .active-slide-details {
     margin: 20px;
-    text-align: center; /* Center align the content */
+    text-align: center; 
   }
   
   .active-slide-details h3 {
-    color: var(--accent-color); /* Apply accent color to keyphrase */
-    font-size: 1.3rem; /* Adjust the font size */
+    color: var(--accent-color); 
+    font-size: 1.3rem; 
   }
   
   .active-slide-details p {
-    font-size: 1rem; /* Adjust the font size */
-    color: var(--main-text); /* Adjust the text color if needed */
+    font-size: 1rem; 
+    color: var(--main-text); 
     margin-top: 10px;
   }

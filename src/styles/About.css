@@ -200,3 +200,31 @@
         width: 150px;
     }
 }
+
+@media (max-width: 452px) {
+    .card-sub-flex img {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media (max-width: 427px) {
+    .card-sub-flex img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card-sub-flex img {
+        top: -1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .card-sub-flex img {
+        height: 85px;
+        width: 85px;
+        top: 0;
+    }
+}
