@@ -249,7 +249,13 @@
   }
 }
 
-@media (max-width: 978px) {
+@media (max-width: 1014px) {
+  .services-text h4 {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 981px) {
   .services-text h4 {
     font-size: 1.45rem;
   }
