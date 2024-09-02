@@ -54,7 +54,6 @@
 
 .services-text a {
   color: var(--accent-color);
-  text-decoration: none;
   text-wrap:nowrap;
 }
 
@@ -161,7 +160,7 @@
 
 .card-content a {
   color: var(--accent-color);
-  text-decoration: none;
+
 }
 
 .card-image {

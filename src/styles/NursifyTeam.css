@@ -82,7 +82,7 @@
 
   .bio-column a {
     color: var(--accent-color);
-    text-decoration: none;
+
   }
 
   @media (max-width: 925px) {
