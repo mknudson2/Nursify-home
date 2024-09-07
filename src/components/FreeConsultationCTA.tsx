@@ -57,7 +57,7 @@ const FreeConsultationCTA: React.FC<FreeConsultationCTAProps> = ({ message, onCl
     <div ref={ctaRef} className="cta-container">
       <div className="cta-background" style={{ backgroundImage: `url(${backgroundImage})` }} ></div>
       <p className="cta-message">{message}</p>
-      <ConsultationButton variant="contained" onClick={onClick} href='https://nursifyeducation.com/group-type-selection'>
+      <ConsultationButton variant="contained" onClick={onClick} href='https://theotprofessor.com/group-type-selection'>
         Schedule Your FREE Consultation
       </ConsultationButton>
     </div>

@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
               <a href="#certification">Certification</a>
               <a href="#contact">Contact</a>
             </div>
-            <button className="join-btn">Register / Sign In</button>
+            <a className="join-btn" href="https://nursifyeducation.app.clientclub.net/login">Register / Sign In</a>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           <a href="#certification">Certification</a>
           <a href="#contact">Contact</a>
         </div>
-        <a className="join-btn" href="https://nursifyeducation.com/student-sales-page-page">Register / Sign In</a>
+        <a className="join-btn" href="https://nursifyeducation.app.clientclub.net/login">Register / Sign In</a>
       </div>
     </nav>)}
 

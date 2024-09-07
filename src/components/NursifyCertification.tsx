@@ -49,7 +49,7 @@ const NursifyCertification: React.FC = () => {
             </p>
 
             <p>
-              Consider this your exclusive invitation to <span className="highlight" style={{textDecoration: 'underline'}}>invest in yourself</span>—not just for your career, but for the lives you touch every day. It’s time to take the next big step forward on your journey of growth and fulfillment.
+              Consider this your exclusive invitation to <a href="https://nursifyeducation.app.clientclub.net/login" className="highlight">invest in yourself</a>—not just for your career, but for the lives you touch every day. It’s time to take the next big step forward on your journey of growth and fulfillment.
             </p>
           </div>
         </div>

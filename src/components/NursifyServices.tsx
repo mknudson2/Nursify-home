@@ -25,11 +25,11 @@ const services = [
     linkedImage: ""
   },
   {
-    header: (<><a href="https://nursifyeducation.com/group-type-selection">Nursing Schools & Employers <span style={{color: 'white'}}>-</span> <br/><span style={{color: 'white'}}>This is for you!</span></a></>),
+    header: (<><a href="https://theotprofessor.com/group-type-selection">Nursing Schools & Employers <span style={{color: 'white'}}>-</span> <br/><span style={{color: 'white'}}>This is for you!</span></a></>),
     text: (<>Research indicates most nurses aren't receiving enough training on the clinical or soft skills required to optimally perform their jobs. We have created the solution and are ready to flexibly integrate it into your curriculums while minding your budget! Find a flexible plan for your University, Hospital, or Team. Students and faculty all the way to veteran nurses will be equipped for success better than ever. Nursify supports our members every step of the way.</>),
     img: "/nurses.jpg",
     altText: "Nursing Schools & Employers - This is for you!",
-    linkedImage: "https://nursifyeducation.com/group-type-selection"
+    linkedImage: "https://theotprofessor.com/group-type-selection"
   }
 ];
 

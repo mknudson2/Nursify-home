@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <FabButton variant="extended" color="primary" href='https://nursifyeducation.com/group-type-selection'>
+            <FabButton variant="extended" color="primary" href='https://theotprofessor.com/group-type-selection'>
                 Free Consultation!
             </FabButton>
         </section>
